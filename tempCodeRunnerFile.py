@@ -1,0 +1,1 @@
+#número inicial da gravidade

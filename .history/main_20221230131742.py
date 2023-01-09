@@ -94,9 +94,9 @@ rato_posicao = 0
 rato = rato_mov[rato_posicao]
 
 #Morcego
-morcego_mov_1 = pygame.image.load("graficos/inimigos/morcego/morcego1.png").convert_alpha()
-morcego_mov_2 = pygame.image.load("graficos/inimigos/morcego/morcego2.png").convert_alpha()
-morcego_mov_3 = pygame.image.load("graficos/inimigos/morcego/morcego3.png").convert_alpha()
+morcego_mov_1 = pygame.image.load("lobsomem-pidao/graficos/inimigos/morcego/morcego1.png").convert_alpha()
+morcego_mov_2 = pygame.image.load("lobsomem-pidao/graficos/inimigos/morcego/morcego2.png").convert_alpha()
+morcego_mov_3 = pygame.image.load("lobsomem-pidao/graficos/inimigos/morcego/morcego3.png").convert_alpha()
 morcego_mov = [morcego_mov_1, morcego_mov_2, morcego_mov_3]
 morcego_posicao = 0
 morcego = morcego_mov[morcego_posicao]
@@ -104,20 +104,20 @@ morcego = morcego_mov[morcego_posicao]
 inimigo_ret_lista = []
 
 #Jogador
-jogador_andar_1 = pygame.image.load("graficos/jogador/jogador_a1.png").convert_alpha()
-jogador_andar_2 = pygame.image.load("graficos/jogador/jogador_a2.png").convert_alpha()
-jogador_andar_3 = pygame.image.load("graficos/jogador/jogador_a3.png").convert_alpha()
-jogador_andar_4 = pygame.image.load("graficos/jogador/jogador_a4.png").convert_alpha()
+jogador_andar_1 = pygame.image.load("lobsomem-pidao/graficos/jogador/jogador_a1.png").convert_alpha()
+jogador_andar_2 = pygame.image.load("lobsomem-pidao/graficos/jogador/jogador_a2.png").convert_alpha()
+jogador_andar_3 = pygame.image.load("lobsomem-pidao/graficos/jogador/jogador_a3.png").convert_alpha()
+jogador_andar_4 = pygame.image.load("lobsomem-pidao/graficos/jogador/jogador_a4.png").convert_alpha()
 jogador_andar = [jogador_andar_1, jogador_andar_2, jogador_andar_3, jogador_andar_4]
 jogador_posicao = 0
-jogador_pulo = pygame.image.load("graficos/jogador/jogador_a3.png").convert_alpha()
+jogador_pulo = pygame.image.load("lobsomem-pidao/graficos/jogador/jogador_a3.png").convert_alpha()
 
 jogador = jogador_andar[jogador_posicao]
 jogador_ret = jogador.get_rect(midbottom = (80,370)) #desenha um retângulo ao redor do jogador (53)
 gravidade_jogador = 0 #número inicial da gravidade
 
 #Tela de Indrução
-jogador_tela = pygame.image.load("graficos/jogador/jogador_tela.png").convert_alpha()
+jogador_tela = pygame.image.load("lobsomem-pidao/graficos/jogador/jogador_tela.png").convert_alpha()
 jogador_tela = pygame.transform.rotozoom(jogador_tela, 10, 1.1)
 jogador_tela_ret = jogador_tela.get_rect(midright = (400,300))
 
@@ -145,7 +145,7 @@ restart2_tela = fonte.render("'Press SPACE to restart!'", False, "Black")
 restart2_tela = pygame.transform.rotozoom(restart2_tela, 0, 0.6)
 restart2_tela_ret = restart2_tela.get_rect(midtop = (572,292))
 
-fundo_tela = pygame.image.load("graficos/fundo_tela.jpg").convert_alpha()
+fundo_tela = pygame.image.load("lobsomem-pidao/graficos/fundo_tela.jpg").convert_alpha()
 
 #Respaw Inimigo
 inimigo_respaw = pygame.USEREVENT +1

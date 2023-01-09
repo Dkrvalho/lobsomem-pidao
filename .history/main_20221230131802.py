@@ -117,7 +117,7 @@ jogador_ret = jogador.get_rect(midbottom = (80,370)) #desenha um retângulo ao r
 gravidade_jogador = 0 #número inicial da gravidade
 
 #Tela de Indrução
-jogador_tela = pygame.image.load("graficos/jogador/jogador_tela.png").convert_alpha()
+jogador_tela = pygame.image.load("lobsomem-pidao/graficos/jogador/jogador_tela.png").convert_alpha()
 jogador_tela = pygame.transform.rotozoom(jogador_tela, 10, 1.1)
 jogador_tela_ret = jogador_tela.get_rect(midright = (400,300))
 
@@ -145,7 +145,7 @@ restart2_tela = fonte.render("'Press SPACE to restart!'", False, "Black")
 restart2_tela = pygame.transform.rotozoom(restart2_tela, 0, 0.6)
 restart2_tela_ret = restart2_tela.get_rect(midtop = (572,292))
 
-fundo_tela = pygame.image.load("graficos/fundo_tela.jpg").convert_alpha()
+fundo_tela = pygame.image.load("lobsomem-pidao/graficos/fundo_tela.jpg").convert_alpha()
 
 #Respaw Inimigo
 inimigo_respaw = pygame.USEREVENT +1
